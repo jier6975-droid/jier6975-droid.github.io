@@ -1,0 +1,54 @@
+title: "Jie's Research Notes"
+description: "Geometry • Optimization • Deep Learning • Academic Notes"
+theme: minima
+
+# GitHub Pages settings
+markdown: kramdown
+highlighter: rouge
+
+# URL settings
+url: "https://jier6975-droid.github.io"
+baseurl: ""
+
+# Navigation (optional)
+header_pages:
+  - index.md
+  - about.md
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown options
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# MathJax support
+mathjax: true
+
+# Collections for organizing notes
+collections:
+  papers:
+    output: true
+  notes:
+    output: true
+  geometry:
+    output: true
+  optimization:
+    output: true
+
+# Defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: post
